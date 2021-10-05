@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Ubuntu Mono";
+}
+
+/*Nav Bar*/
+.max-width{
+  max-width: auto;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.navbar{
+  position: fixed;
+  padding: 20px 0;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.navbar.sticky{
+  padding: 10px 0;
+  background-color: rgb(20, 73, 220);
+}
+
+.navbar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a{
+  font-size: 65px;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar .logo a span{
+  color: greenyellow;
+}
+
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a{
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 30px;
+  transition: color 0.5 ease;
+}
+
+.navbar .menu li a:hover{
+  color:grey;
+  /* background-color: grey; */
+
+}
+
+/*Home Content*/
+
+.home{
+  display:flex;
+  background-image: url("../imgs/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 500px;
+}
+
+.home .max-width{
+  margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+  font-size: 28px;
+
+}
+
+.home .home-content .text-2{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.home .home-content .text-3{
+  font-size: 40px;
+}
+
+.home .home-content .text-3 span{
+  color: rgb(0, 38, 255);
+  font-weight: 600;
+
+}
