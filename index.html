@@ -15,8 +15,11 @@
   <!--Core CSS-->
   <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
 
 </head>
@@ -32,6 +35,9 @@
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
     </div>
   </nav>
 
@@ -47,26 +53,107 @@
   </section>
 
 
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt laudantium perspiciatis modi impedit! Placeat,
-    modi. Nisi quis suscipit placeat temporibus tempore numquam facere magni adipisci laboriosam tempora exercitationem,
-    deserunt neque voluptatem asperiores qui. Dolorem facere recusandae quisquam. Doloremque inventore eaque, tempore
-    nostrum, reiciendis officia est, deserunt eligendi temporibus nobis maiores laudantium nesciunt ut natus nisi culpa
-    fugiat facilis tenetur deleniti laboriosam tempora autem at alias mollitia. Dolorem eaque distinctio dolores quia
-    sapiente, voluptatum, ut autem inventore iste provident facilis aspernatur, nemo quo minima. Soluta debitis est
-    eligendi similique unde iste fuga nemo quia officia recusandae tempore, repellendus, voluptas modi culpa voluptatem,
-    repudiandae harum pariatur illo distinctio cumque a! Minus, praesentium! Eveniet perferendis sunt voluptatem est cum
-    ullam sint, nihil, error assumenda ducimus reprehenderit incidunt, beatae doloremque aspernatur magni optio. Vitae
-    assumenda repellendus, sed consequatur ex architecto est neque ducimus beatae quod ea temporibus voluptatibus, esse
-    eos ad quis. Dicta mollitia consequuntur id voluptatibus? Officia, aut quisquam. Vitae odit fugiat laboriosam sint
-    neque optio placeat, nesciunt ipsa eos aperiam dolorum assumenda molestias facere asperiores saepe blanditiis id.
-    Nesciunt veniam reprehenderit, animi officia quae temporibus nihil sint iste error labore cum culpa debitis. Nulla,
-    maiores dicta. Eum distinctio voluptates nam minima. Consequuntur.</p>
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">About me</h2>
+      <div class="about-content">
+        <div class="column left">
+          <img src="assets/imgs/DogandMe.jpg" alt="Picture of me">
+        </div>
+        <div class="column right">
+          <div class="text">I'm Nikhil and I am a <span>Carleton Graduate</span></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maiores cum unde adipisci fugit
+            exercitationem aliquam amet inventore aspernatur dicta veniam corporis ab maxime quibusdam, iste similique
+            veritatis accusantium, eos tempora dolorum earum, labore incidunt aliquid? Eveniet in veritatis ratione sed
+            doloribus perferendis laborum maxime laudantium itaque delectus quisquam dolorem dolores, illum alias nulla
+            similique non ipsum, voluptatibus hic! Non maxime pariatur magni voluptatum. Est assumenda officiis eos
+            iusto deleniti perferendis et facere possimus repudiandae eum! Praesentium sequi fuga ullam aliquam
+            excepturi quibusdam in natus possimus hic reiciendis facilis itaque, officiis accusantium dolorem architecto
+            maxime pariatur, animi dolores ratione, consequatur sapiente et iure minima! Id iste rem magni, harum
+            reprehenderit sapiente illum, necessitatibus enim animi quisquam repellendus fugit, molestiae quae.
+            Necessitatibus cumque quidem consectetur consequatur in accusantium ducimus sunt deleniti rerum ullam ex
+            excepturi, dolor beatae distinctio aspernatur mollitia possimus sequi facilis incidunt quis, doloremque
+            atque. Earum ipsa sapiente hic eius expedita laudantium eligendi quasi quisquam distinctio non temporibus
+            excepturi culpa dolorem sequi inventore beatae recusandae saepe tenetur at, nobis maiores facere iste
+            assumenda? Expedita velit nulla doloremque odit, consequatur similique cupiditate, optio placeat, deserunt
+            consequuntur dicta! Velit corporis repudiandae similique placeat id nemo, iste consequuntur voluptatibus.
+            Debitis, quas corporis!</p>
+          <a href="#">Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skiils Section -->
+  <!-- <section class="skills" id="skills">
+    <div class="max-width">
+      <h2 class="title">Skills</h2>
+      <div class="skills-content">
+        <div class="column left">
+          <div class="text">My creative skiils & experience</div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur accusamus amet inventore. Cum id accusamus
+            possimus. Illo harum eum possimus numquam quos soluta neque sit iste praesentium fuga aperiam tempore
+            reiciendis amet velit a, aut perspiciatis hic dolore ea accusamus, asperiores non dolor ipsum? Possimus
+            quasi, dicta eaque necessitatibus amet similique. Consequatur porro vitae aperiam non nostrum laboriosam
+            ipsa eligendi?</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
 
 
-    <script src="assets/js/script.js"></script>
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="max-width">
+      <h2 class="title">Projects</h2>
+      <div class="carousel owl-carousel">
+        <div class="card">
+          <div class="box">
+            <img src="../Portfolio/assets/imgs/projects/Proj1-CryptoStock.PNG" alt="Project1">
+            <div class="text">CryptoStock Values</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consectetur cum placeat! Voluptas
+              obcaecati praesentium dignissimos, necessitatibus fugiat inventore adipisci asperiores harum nisi quo
+              nesciunt quidem quos consequuntur exercitationem error!</p>
+          </div>
+          <div class="box">
+            <img src="../Portfolio/assets/imgs/projects/Proj2-WeatherDash.PNG" alt="Project2">
+            <div class="text">CryptoStock Values</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consectetur cum placeat! Voluptas
+              obcaecati praesentium dignissimos, necessitatibus fugiat inventore adipisci asperiores harum nisi quo
+              nesciunt quidem quos consequuntur exercitationem error!</p>
+          </div>
+          <div class="box">
+            <img src="../Portfolio/assets/imgs/projects/Proj3-WorkdayPlanner.PNG" alt="Project3">
+            <div class="text">CryptoStock Values</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consectetur cum placeat! Voluptas
+              obcaecati praesentium dignissimos, necessitatibus fugiat inventore adipisci asperiores harum nisi quo
+              nesciunt quidem quos consequuntur exercitationem error!</p>
+          </div>
+          <div class="box">
+            <img src="../Portfolio/assets/imgs/projects/Proj4-CodeQuiz.PNG" alt="Project4">
+            <div class="text">CryptoStock Values</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consectetur cum placeat! Voluptas
+              obcaecati praesentium dignissimos, necessitatibus fugiat inventore adipisci asperiores harum nisi quo
+              nesciunt quidem quos consequuntur exercitationem error!</p>
+          </div>
+          <div class="box">
+            <img src="../Portfolio/assets/imgs/projects/Proj5-PasswordGenerator.PNG" alt="Project5">
+            <div class="text">CryptoStock Values</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consectetur cum placeat! Voluptas
+              obcaecati praesentium dignissimos, necessitatibus fugiat inventore adipisci asperiores harum nisi quo
+              nesciunt quidem quos consequuntur exercitationem error!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="assets/js/script.js"></script>
 
 </body>
+
 
 
 </html>

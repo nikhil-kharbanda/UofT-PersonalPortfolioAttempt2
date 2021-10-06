@@ -6,47 +6,53 @@
   font-family: "Ubuntu Mono";
 }
 
-/*Nav Bar*/
-.max-width{
+.max-width {
   max-width: auto;
   padding: 0 80px;
   margin: auto;
 }
 
-.navbar{
+section {
+  padding: 100px 0;
+}
+
+/*Nav Bar*/
+
+.navbar {
   position: fixed;
   padding: 20px 0;
+  z-index: 999;
   width: 100%;
   transition: all 0.5s ease;
 }
 
-.navbar.sticky{
+.navbar.sticky {
   padding: 10px 0;
   background-color: rgb(20, 73, 220);
 }
 
-.navbar .max-width{
+.navbar .max-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navbar .logo a{
+.navbar .logo a {
   font-size: 65px;
   color: white;
   font-weight: 500;
 }
 
-.navbar .logo a span{
+.navbar .logo a span {
   color: greenyellow;
 }
 
-.navbar .menu li{
+.navbar .menu li {
   list-style: none;
   display: inline-block;
 }
 
-.navbar .menu li a{
+.navbar .menu li a {
   color: white;
   font-size: 20px;
   font-weight: 400;
@@ -54,16 +60,22 @@
   transition: color 0.5 ease;
 }
 
-.navbar .menu li a:hover{
-  color:grey;
+.navbar .menu li a:hover {
+  color: grey;
   /* background-color: grey; */
+}
 
+/* menu btn styling*/
+.menu-btn {
+  color: azure;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
 }
 
 /*Home Content*/
-
-.home{
-  display:flex;
+.home {
+  display: flex;
   background-image: url("../imgs/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,26 +83,313 @@
   min-height: 500px;
 }
 
-.home .max-width{
+.home .max-width {
   margin: auto 0 auto 40px;
 }
 
-.home .home-content .text-1{
+.home .home-content .text-1 {
   font-size: 28px;
-
 }
 
-.home .home-content .text-2{
+.home .home-content .text-2 {
   font-size: 50px;
   font-weight: 700;
 }
 
-.home .home-content .text-3{
+.home .home-content .text-3 {
   font-size: 40px;
 }
 
-.home .home-content .text-3 span{
+.home .home-content .text-3 span {
   color: rgb(0, 38, 255);
   font-weight: 600;
+}
 
+/*About section styling*/
+
+.about {
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+.about .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: black;
+  transform: translate(-50%);
+}
+
+.about .title::after {
+  content: "Who Am I?";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  font-size: 18px;
+  padding: 5px;
+  color: blue;
+  background: white;
+  transform: translate(-50%);
+}
+
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .about-content .left {
+  width: 40%;
+}
+
+.about .about-content .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 35%;
+  box-shadow: grey -10px -5px 3px;
+}
+
+.about .about-content .right {
+  width: 60%;
+}
+
+.about .about-content .right .text {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+  color: rgb(0, 38, 255);
+}
+
+.about .about-content .right p {
+  text-align: justify;
+}
+
+.about .about-content .right a {
+  display: inline-block;
+  background: blue;
+  color: white;
+  font-size: 24px;
+  padding: 1px 30px;
+  margin-top: 16px;
+  border-radius: 4px;
+  border: 2px dashed blue;
+  transition: all 0.5s ease;
+}
+
+.about .about-content .right a:hover {
+  background-color: grey;
+}
+
+.about .about-content .column {
+  width: 50%;
+}
+
+/* Skils styping */
+
+/* .skills .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: black;
+  transform: translate(-50%);
+}
+
+.skills .title::after {
+  content: "What I bring?";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  font-size: 18px;
+  padding: 5px;
+  color: blue;
+  background: white;
+  transform: translate(-50%);
+} */
+
+
+/*Projects Styling*/
+
+.projects .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: black;
+  transform: translate(-50%);
+}
+
+.projects .title::after {
+  content: "What I have done?";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  font-size: 18px;
+  padding: 5px;
+  color: blue;
+  background: white;
+  transform: translate(-50%);
+}
+
+.projects .carousel .card {
+  background-color: lavender;
+  border-radius: 10px;
+  padding: 25px 36px;
+  text-align: center;
+}
+
+.projects .carousel .card .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects .carousel .card .text{
+  font-size: 26px;
+  font-weight: 600;
+  margin: 10px 0 7px 0;
+}
+
+.projects .carousel .card img {
+  height: 200px;
+  width: 200px;
+  object-fit:contain;
+  border-radius: 40%;
+  border: 6px solid blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive Media*/
+@media (max-width: 1015px) {
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 936px) {
+  .max-width {
+    padding: 0 40px;
+    max-width: 800px;
+  }
+
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background-color: black;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.7s ease-out;
+  }
+
+  .navbar .menu.active {
+    left: 0;
+  }
+
+  .navbar .menu li {
+    display: block;
+  }
+
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 24px;
+  }
+
+  .home .home-content .text-1 {
+    font-size: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 30px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 24px;
+    transition: all 0.3s ease;
+  }
+
+  .about .about-content .column{
+    width: 100%;
+  }
+
+  .about .about-content .left{
+    display: flex;
+    justify-content: center;
+    margin:0 auto 60px;
+  }
+
+  .about .about-content .right{
+    flex: 100%;
+  }
+
+  .about .about-content .right .text {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 937px) {
+  .home .home-content .text-1 {
+    transition: all 0.3s ease;
+  }
+
+  .home .home-content .text-2 {
+    transition: all 0.3s ease;
+  }
+
+  .home .home-content .text-3 {
+    transition: all 0.3s ease;
+  }
 }
