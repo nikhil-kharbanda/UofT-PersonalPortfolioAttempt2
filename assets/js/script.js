@@ -13,7 +13,27 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
     });
 
-    $(".carousel").owlCarousel({
+    $('.carousel').owlCarousel({
+        loop: false,
+        margin: 20,
+        autoplayTimeOut: 2000,
+        autoPlayHoverPause: true,
+        responsive:{
+            0:{
+                items: 1,
+                nav: false
+            },
+            
+            600:{
+                items: 2,
+                nav: false
+            },
+
+            1000:{
+                items: 3,
+                nav: false
+            },
+        }
 
     });
 
