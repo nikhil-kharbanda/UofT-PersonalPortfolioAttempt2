@@ -31,6 +31,20 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
+    var typed = new Typed(".typing", {
+        strings: ["Carleton Graduate", "Developer", "Computer Systems Engineer Graduate"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    var typed = new Typed(".typing2", {
+        strings: ["Carleton Graduate", "Developer", "Computer Systems Engineer Graduate"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
     $('.carousel').owlCarousel({
         loop: false,
         margin: 20,

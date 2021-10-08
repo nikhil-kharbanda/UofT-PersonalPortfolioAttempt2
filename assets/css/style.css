@@ -60,7 +60,7 @@ section .title::after {
 
 .navbar {
   position: fixed;
-  padding: 20px 0;
+  padding: 10px 0;
   z-index: 999;
   width: 100%;
   transition: all 0.5s ease;
@@ -162,7 +162,7 @@ section .title::after {
 }
 
 .about .title::after {
-  content: "Who Am I?";
+  content: "who am i?";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -181,7 +181,7 @@ section .title::after {
 }
 
 .about .about-content .left {
-  width: 40%;
+  width: 30%;
 }
 
 .about .about-content .left img {
@@ -193,11 +193,11 @@ section .title::after {
 }
 
 .about .about-content .right {
-  width: 60%;
+  width: 70%;
 }
 
 .about .about-content .right .text {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 800;
   margin-bottom: 10px;
 }
@@ -208,6 +208,10 @@ section .title::after {
 
 .about .about-content .right p {
   text-align: justify;
+}
+
+.home-ul{
+  margin-left: 25px;
 }
 
 .about .about-content .right a {
@@ -232,7 +236,7 @@ section .title::after {
 
 /* Skils styping */
 .skills .title::after {
-  content: "What I bring?";
+  content: "what i bring?";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -241,6 +245,11 @@ section .title::after {
   color: blue;
   background: white;
   transform: translate(-50%);
+  background-color: #15ff00;
+}
+
+.skills, .contact{
+  background-color: #15ff00;
 }
 
 .skills .skills-content .left .text{
@@ -311,10 +320,30 @@ section .title::after {
   width: 45%;
 }
 
+.certifs{
+  margin-left: 30px;
+}
+
+.certif-link{
+  color:black;
+  transition: all 0.5s ease;
+}
+
+.certif-link:hover{
+  transform: scale(1.15);
+  color:blue;
+  font-size: 24px;
+  transition: all 0.5s ease;
+}
+
+.certifs li{
+  padding-bottom: 5px;
+}
+
 
 /*Projects Styling*/
 .projects .title::after {
-  content: "Previous Projects";
+  content: "previous projects";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -352,8 +381,8 @@ section .title::after {
 }
 
 .projects .carousel .card img {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   object-fit: contain;
   border-radius: 40%;
   border: 3px dashed blue;
@@ -387,7 +416,7 @@ section .title::after {
 
 /*Contact Section, used a stylying online with a little mix of my own to make it look nicer*/
 .contact .title::after {
-  content: "Contact me via";
+  content: "contact me via";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -396,6 +425,7 @@ section .title::after {
   color: blue;
   background: white;
   transform: translate(-50%);
+  background-color: #15ff00;
 }
 
 .contact .contact-content .text{
