@@ -73,7 +73,7 @@ section .title::after {
   font-weight: 500;
 }
 
-.navbar .logo a span {
+.navbar .logo a .typing {
   color: greenyellow;
 }
 
@@ -130,7 +130,7 @@ section .title::after {
   font-size: 40px;
 }
 
-.home .home-content .text-3 span {
+.home .home-content .text-3 .typing2 {
   color: rgb(0, 38, 255);
   font-weight: 600;
 }
