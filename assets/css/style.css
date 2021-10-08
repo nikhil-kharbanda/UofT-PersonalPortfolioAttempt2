@@ -46,6 +46,16 @@ section .title::after {
   transform: translateX(-50%);
 }
 
+.title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+
 /*Nav Bar*/
 
 .navbar {
@@ -73,7 +83,7 @@ section .title::after {
   font-weight: 500;
 }
 
-.navbar .logo a .typing {
+.navbar .logo a span {
   color: greenyellow;
 }
 
@@ -130,7 +140,7 @@ section .title::after {
   font-size: 40px;
 }
 
-.home .home-content .text-3 .typing2 {
+.home .home-content .text-3 .typing {
   color: rgb(0, 38, 255);
   font-weight: 600;
 }
@@ -138,16 +148,6 @@ section .title::after {
 /*About section styling*/
 
 .about {
-}
-
-.title {
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 600;
-  color: black;
-  margin-bottom: 50px;
-  padding-bottom: 20px;
 }
 
 .about .title::before {
@@ -202,7 +202,7 @@ section .title::after {
   margin-bottom: 10px;
 }
 
-.about .about-content .right .text span {
+.about .about-content .right .text .typing2 {
   color: rgb(0, 38, 255);
 }
 
