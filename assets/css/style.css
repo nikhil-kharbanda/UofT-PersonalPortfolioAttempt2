@@ -1,3 +1,4 @@
+/* Universal font selector */
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +7,19 @@
   font-family: "Ubuntu Mono";
 }
 
+/* Sets the max width per section */
 .max-width {
   max-width: auto;
   padding: 0 80px;
   margin: auto;
 }
 
+/* Space out all sections */
 section {
   padding: 100px 0;
 }
 
+/* For class titles in all sections */
 section .title {
   position: relative;
   text-align: center;
@@ -24,6 +28,8 @@ section .title {
   margin-bottom: 60px;
   padding-bottom: 20px;
 }
+
+/* Puts a line above for all titles in all sections. */
 section .title::before {
   content: "";
   position: absolute;
@@ -35,6 +41,7 @@ section .title::before {
   transform: translateX(-50%);
 }
 
+/* Puts a line under for all sections */
 section .title::after {
   position: absolute;
   bottom: -8px;
@@ -46,6 +53,13 @@ section .title::after {
   transform: translateX(-50%);
 }
 
+/* Background colors for opposite 2 sections */
+.skills, .contact{
+  background-color: #15ff00;
+}
+
+
+/* For all title classes */
 .title {
   position: relative;
   text-align: center;
@@ -57,7 +71,6 @@ section .title::after {
 }
 
 /*Nav Bar*/
-
 .navbar {
   position: fixed;
   padding: 10px 0;
@@ -102,7 +115,6 @@ section .title::after {
 
 .navbar .menu li a:hover {
   color: grey;
-  /* background-color: grey; */
 }
 
 /* menu btn styling*/
@@ -140,27 +152,13 @@ section .title::after {
   font-size: 40px;
 }
 
+/* Font for typing effect */
 .home .home-content .text-3 .typing {
   color: rgb(0, 38, 255);
   font-weight: 600;
 }
 
 /*About section styling*/
-
-.about {
-}
-
-.about .title::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: black;
-  transform: translate(-50%);
-}
-
 .about .title::after {
   content: "who am i?";
   position: absolute;
@@ -173,6 +171,7 @@ section .title::after {
   transform: translate(-50%);
 }
 
+/* Set the about section to flex */
 .about .about-content {
   display: flex;
   flex-wrap: wrap;
@@ -180,10 +179,12 @@ section .title::after {
   justify-content: space-between;
 }
 
+/* set left coloum */
 .about .about-content .left {
   width: 30%;
 }
 
+/* Img for the left side */
 .about .about-content .left img {
   height: 400px;
   width: 400px;
@@ -192,28 +193,34 @@ section .title::after {
   box-shadow: grey -10px -5px 3px;
 }
 
+/* set right column */
 .about .about-content .right {
   width: 70%;
 }
 
+/* Font for text for the right side */
 .about .about-content .right .text {
   font-size: 26px;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
+/* Font for color effect */
 .about .about-content .right .text .typing2 {
   color: rgb(0, 38, 255);
 }
 
+/* Set text to right */
 .about .about-content .right p {
   text-align: justify;
 }
 
+/* Indent bullet points */
 .home-ul{
   margin-left: 25px;
 }
 
+/* For the hyperlink in about (resume)*/
 .about .about-content .right a {
   display: inline-block;
   background: blue;
@@ -226,10 +233,12 @@ section .title::after {
   transition: all 0.5s ease;
 }
 
+/* Hover effect for hyperlinks */
 .about .about-content .right a:hover {
   background-color: grey;
 }
 
+/* Set width for columns */
 .about .about-content .column {
   width: 50%;
 }
@@ -248,76 +257,29 @@ section .title::after {
   background-color: #15ff00;
 }
 
-.skills, .contact{
-  background-color: #15ff00;
-}
-
-.skills .skills-content .left .text{
+/* Set font for skills section in text */
+.skills .skills-content .text{
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.skills .skills-content .left p{
+/* Set for for p's in skills area */
+.skills .skills-content p{
   text-align: justify;
 }
 
-.skills .skills-content .right .bars{
+/* Each bar should be slightly spaced out */
+.skills .skills-content .bars{
   margin-bottom: 15px;
 }
 
-.skills .skills-content .right .info{
+/* Section for each programming strength */
+.skills .skills-content .info{
   display: flex;
   margin-bottom: 5px;
   align-items: center;
   justify-content: space-between;
-}
-
-
-.skills .skills-content .right span{
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.skills .skills-content .right .line{
-  height: 5px;
-  width: 100%;
-  background: lightgrey;
-  position: relative;
-}
-
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: blue;
-}
-
-.skills-content .right .html::before{
-  width: 80%;
-}
-.skills-content .right .css::before{
-  width: 73%;
-}
-.skills-content .right .js::before{
-  width: 63%;
-}
-.skills-content .right .java::before{
-  width: 90%;
-}
-
-.skills-content .right .python::before{
-  width: 72%;
-}
-
-.skills-content .right .EmbeddedC::before{
-  width: 45%;
-}
-
-.skills-content .right .sql::before{
-  width: 45%;
 }
 
 .certifs{
@@ -340,6 +302,55 @@ section .title::after {
   padding-bottom: 5px;
 }
 
+.skills .skills-content span{
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.skills .skills-content .line{
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+
+.skills .skills-content .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: blue;
+}
+
+.skills-content .html::before{
+  width: 80%;
+}
+.skills-content .css::before{
+  width: 73%;
+}
+.skills-content .js::before{
+  width: 63%;
+}
+.skills-content .java::before{
+  width: 90%;
+}
+
+.skills-content .python::before{
+  width: 53%;
+}
+
+.skills-content .EmbeddedC::before{
+  width: 72%;
+}
+
+.skills-content .sql::before{
+  width: 45%;
+}
+
+.skills-content .MatLABSimulink::before{
+  width: 37%;
+}
 
 /*Projects Styling*/
 .projects .title::after {
@@ -354,6 +365,7 @@ section .title::after {
   transform: translate(-50%);
 }
 
+/* Carousel cards for projects */
 .projects .carousel .card {
   background-color: lavender;
   border-radius: 10px;
@@ -361,12 +373,14 @@ section .title::after {
   text-align: center;
 }
 
+/* Carousel effect when hovered */
 .projects .carousel .card:hover {
   background-color: grey;
   transform: scale(1.1);
   transition: all 0.9s ease;
 }
 
+/* Each box within card */
 .projects .carousel .card .box {
   display: flex;
   flex-direction: column;
@@ -374,12 +388,14 @@ section .title::after {
   justify-content: center;
 }
 
+/* Title of card */
 .projects .carousel .card .text {
   font-size: 24px;
   font-weight: 400;
   margin: 10px 0 8px 0;
 }
 
+/* Img within each card */
 .projects .carousel .card img {
   height: 300px;
   width: 300px;
@@ -388,6 +404,7 @@ section .title::after {
   border: 3px dashed blue;
 }
 
+/* Dots for easy nav at the bottom of card to switch to different projects */
 .owl-dots {
   text-align: center;
   margin-top: 20px;

@@ -6,21 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
   <title>Personal Portfolio</title>
 
-  <!--Font Awesome-->
+  <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 
-  <!--Google Font-->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 
-  <!--Core CSS-->
+  <!-- Core CSS -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Owl Carousel, used for projects section -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
 </head>
 
 <body>
+  <!-- The navigation bar. Links to each section can be found -->
   <nav class="navbar">
     <div class="max-width">
+      <!-- I wanted to have the "Portfolio" word to have different colours to have a nice asthetic -->
       <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
       <ul class="menu">
         <li><a href="#home">Home</a></li>
@@ -29,6 +33,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <!-- This bar only shows when the screen resolution is less -->
       <div class="menu-btn">
         <i class="fas fa-bars"></i>
       </div>
@@ -36,24 +41,28 @@
   </nav>
 
 
+  <!-- The home section. Image background declared in the CSS file. -->
   <section class="home" id="home">
     <div class="max-width">
       <div class="home-content">
         <div class="text-1">Hello, my name is</div>
         <div class="text-2">Nikhil Kharbanda</div>
+        <!-- Looked up online how to have the typing effect. Code in JS file -->
         <div class="text-3">And I am a <span class="typing">Carleton Graduate</span></div>
       </div>
     </div>
   </section>
 
-
+  <!-- The "About me" section -->
   <section class="about" id="about">
     <div class="max-width">
       <h2 class="title">About me</h2>
       <div class="about-content">
+        <!-- On the left side, show photo of me -->
         <div class="column left">
           <img src="assets/imgs/DogandMe.jpg" alt="Picture of me">
         </div>
+        <!-- On right side, display bio about me. Copied the typing effect from previous -->
         <div class="column right">
           <div class="text">I'm Nikhil and I am a <span class="typing2">Carleton Graduate</span></div> <br />
           <p>My name is Nikhil Kharbanda and I am a recent Carleton Graduate from the Computer Systems Engineering
@@ -94,6 +103,7 @@
     <div class="max-width">
       <h2 class="title">Skills</h2>
       <div class="skills-content">
+        <!-- Tried to make it col left and right, didnt work. But show off my certifs and skill-set's -->
         <div class="column left">
           <div class="text">My creative skiils & experience</div>
           <p>Out of my 5 years of university, I developed a lot of coding skills, and have learned a lot.</p> <br \>
@@ -169,6 +179,15 @@
             </div>
             <div class="line sql"></div>
           </div>
+
+          <div class="bars">
+            <div class="info">
+              <span>MatLAB/Simulink</span>
+              <span>37%</span>
+            </div>
+            <div class="line MatLABSimulink"></div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -178,6 +197,7 @@
   <section class="projects" id="projects">
     <div class="max-width">
       <h2 class="title">Projects</h2>
+      <!-- Made a carousel wheel displaying various projects. Can easily add more after -->
       <div class="carousel owl-carousel">
         <div class="card ">
           <div class="box">
@@ -249,16 +269,15 @@
             <div class="text">Horiseon</div>
             <p>In this assignment, I was designated to optimize the Horisseon webpage.</p>
             <br \>
-
             <a href="https://github.com/nikhil-kharbanda/UofTBootcamp_Homework01">GitHub</a>
             <a href="https://nikhil-kharbanda.github.io/UofTBootcamp_Homework01/">Live</a>
-
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Contact form -->
   <section class="contact" id="contact">
     <div class="max-width">
       <h2 class="title">Contact me</h2>
@@ -304,11 +323,17 @@
         alt="Nikhil's Email" /></a>
   </footer>
 
-
+  <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Script for the typing effect -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  
+  <!-- Script for owl carousel for projects section -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Script created for other effects (such nav bar) -->
   <script src="assets/js/script.js"></script>
 
 </body>

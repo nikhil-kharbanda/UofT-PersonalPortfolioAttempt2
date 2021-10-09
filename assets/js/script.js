@@ -31,6 +31,7 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
+    // Typing effect for landing page
     var typed = new Typed(".typing", {
         strings: ["Carleton Graduate", "Developer", "Computer Systems Engineer Graduate"],
         typeSpeed: 100,
@@ -38,6 +39,7 @@ $(document).ready(function(){
         loop: true
     });
 
+    // Typing effect for "about me" section
     var typed = new Typed(".typing2", {
         strings: ["Carleton Graduate", "Developer", "Computer Systems Engineer Graduate"],
         typeSpeed: 100,
@@ -45,6 +47,7 @@ $(document).ready(function(){
         loop: true
     });
 
+    // Carousel activation. Found online. Wanted t try something "not bootstrap" since I didnt get the opportuinity to for the project
     $('.carousel').owlCarousel({
         loop: false,
         margin: 20,
