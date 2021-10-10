@@ -14,7 +14,8 @@
   - [Tests](#tests)  
 
 ## Installation
-  Just click the link, or go to https://nikhil-kharbanda.github.io/UofT-PersonalPortfolioAttempt2/
+  Just click the link, or go to https://nikhil-kharbanda.github.io/UofT-PersonalPortfolioAttempt2/.
+  Used Carousel.js and Typing.js for development  
 
 ## Installation
   Purpose of this project was to make a more polished personal portfolio webpage, while displaying extra information. Attached a resume, entered my certifs, etc so potential employeers can see all my information at any time.
