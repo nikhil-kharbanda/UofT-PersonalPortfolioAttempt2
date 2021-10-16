@@ -54,8 +54,33 @@ section .title::after {
 }
 
 /* Background colors for opposite 2 sections */
-.skills, .contact{
-  background-color: #15ff00;
+/* .skills, .contact{
+  /* background-color: #15ff00; 
+} */
+
+.about{
+  background-image: url('../imgs/about_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.skills{
+  background-image: url('../imgs/skills_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects{
+  background-image: url('../imgs/projects_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact{
+  background-image: url('../imgs/contact_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -166,9 +191,10 @@ section .title::after {
   left: 50%;
   font-size: 18px;
   padding: 5px;
-  color: blue;
+  color: black;
   background: white;
   transform: translate(-50%);
+  background-color: white;
 }
 
 /* Set the about section to flex */
@@ -251,10 +277,10 @@ section .title::after {
   left: 50%;
   font-size: 18px;
   padding: 5px;
-  color: blue;
+  color: black;
   background: white;
   transform: translate(-50%);
-  background-color: #15ff00;
+  background-color: white;
 }
 
 /* Set font for skills section in text */
@@ -360,9 +386,10 @@ section .title::after {
   left: 50%;
   font-size: 18px;
   padding: 5px;
-  color: blue;
+  color: black;
   background: white;
   transform: translate(-50%);
+  background-color: white;
 }
 
 /* Carousel cards for projects */
@@ -439,10 +466,10 @@ section .title::after {
   left: 50%;
   font-size: 18px;
   padding: 5px;
-  color: blue;
+  color: black;
   background: white;
   transform: translate(-50%);
-  background-color: #15ff00;
+  background-color: white;
 }
 
 .contact .contact-content .text{
@@ -516,7 +543,7 @@ section .title::after {
 /*Footer Settings*/
 .footer{
   text-align: center;
-  background-color: grey;
+  background-color: rgb(128, 128, 128);
 }
 
 .footer h2 {
