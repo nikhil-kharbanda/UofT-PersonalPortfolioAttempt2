@@ -310,11 +310,14 @@ section .title::after {
 
 .certifs{
   margin-left: 30px;
+  padding-top: 20px;
 }
 
 .certif-link{
-  color:black;
+  color:rgb(0, 0, 0);
   transition: all 0.5s ease;
+  font-size: 16px;
+
 }
 
 .certif-link:hover{

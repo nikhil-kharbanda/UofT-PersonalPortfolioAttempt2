@@ -12,6 +12,7 @@
   - [License](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)  
+  - [Images](#images)
 
 ## Installation
   Just click the link, or go to https://nikhil-kharbanda.github.io/UofT-PersonalPortfolioAttempt2/.
@@ -25,6 +26,12 @@
 
 ## Tests
   No
+
+## Images
+  ![HomePage](./assets/imgs/Website/Page1.PNG)
+  ![AboutMe](./assets/imgs/Website/Page2.PNG)
+  ![ScreenResponsive](./assets/imgs/Website/Page3.PNG)
+  ![ScreenResponsive2](./assets/imgs/Website/Page4.PNG)
 
 ## About the developer 
   nikhil-kharbanda <br >
